@@ -1,8 +1,21 @@
-<nav>
-    <ul>
-      <li><a [routerLink]="['/']">Home</a></li>
-      <li><a [routerLink]="['/about']">Above</a></li>
-      <li><a [routerLink]="['/login']">Login</a></li>
+<body>
+  <nav>  <!-- 1)This is a Semantic HTML Change -->
+    <ul class="nav-links">
+  
+      <!-- 1)This is an A11y Change -->
+      <li><a [routerLink]="['/']" role="link" aria-label="Homepage">Homepage</a></li>
+      <li>
+        <a [routerLink]="['/about']" role="link" aria-label="AboutPage">About</a>
+      </li>
+      <li>
+        <a [routerLink]="['/login']" role="link" aria-label="LoginPage">Login</a>
+      </li>
+      <li>
+      <a [routerLink]="['/contact']" role="link" aria-label="Contact">Contact</a>
+    </li>
     </ul>
-</nav>
+  
+  </nav>
+  </body>
+  
   
